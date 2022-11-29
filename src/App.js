@@ -1,23 +1,49 @@
 import './App.css';
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Profile from "./routes/Profile";
 import Favorite from "./routes/Favorite";
 import Detail from './routes/Detail';
+import { HiHome } from "react-icons/hi";
+import { MdGroup } from "react-icons/md";
 
-export default function App(){
-    return(
-      <div className="App">
+
+export default function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/favorite" element={<Favorite/>}/>
-          <Route path="/detail/:idDrink" element={<Detail/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/favorite" element={<Favorite />} />
+          <Route path="/detail/:idDrink" element={<Detail />} />
         </Routes>
-
-      </div>
-    )
+        <footer>
+          <NavLink to="/home" className="iconWrapper">
+            <HiHome className="icon">
+              Home
+            </HiHome>
+          </NavLink>
+          <NavLink to="/favorite" className="iconWrapper">
+            <HiHome className="icon">
+              Favorite
+            </HiHome>
+          </NavLink>
+          <NavLink to="/about" className="iconWrapper">
+            <HiHome className="icon">
+              About
+            </HiHome>
+          </NavLink>
+          <NavLink to="/profile" className="iconWrapper">
+            <MdGroup className="icon">
+              Profile
+            </MdGroup>
+          </NavLink>
+        </footer>
+      </BrowserRouter>
+    </div>
+  )
 }
-

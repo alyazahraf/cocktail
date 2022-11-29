@@ -3,7 +3,7 @@ import "./FooterStyles.css"
 export default function Footer() {
     return (
         <div className="footer">
-            <div className="top">
+            {/* <div className="top">
                 <div>
                     <h1>Cocktail!</h1>
                     <p>Choose your favorite cocktail.</p>
@@ -47,7 +47,7 @@ export default function Footer() {
                     <p>Privacy Policy</p>
                     <p>License</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

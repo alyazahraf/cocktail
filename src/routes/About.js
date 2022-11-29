@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 function About() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero
                 cName="hero-mid"
                 heroImg="https://imgs.heart.co.uk/images/67577?width=6000&crop=4_3&signature=YmxxCYoxSQC8aE8oYolYuQqipdc="

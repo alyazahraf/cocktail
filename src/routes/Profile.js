@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 function Profile (){
     return(
        <>
-       <Navbar/>
+       {/* <Navbar/> */}
        <MyProfile/>
        <Footer/>
        </> 

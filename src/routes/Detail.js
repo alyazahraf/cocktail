@@ -33,7 +33,7 @@ function Detail() {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             {
                 !data?
                  <p></p>

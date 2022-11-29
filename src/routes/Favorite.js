@@ -9,7 +9,7 @@ function Favorite() {
     
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero
                 cName="hero-mid"
                 heroImg="https://restaurantclicks.com/wp-content/uploads/2021/06/20-Classic-Cocktails-To-Order-At-Any-Bar.jpg"
