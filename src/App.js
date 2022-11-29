@@ -7,6 +7,8 @@ import Favorite from "./routes/Favorite";
 import Detail from './routes/Detail';
 import { HiHome } from "react-icons/hi";
 import { MdGroup } from "react-icons/md";
+import { FaQuestionCircle } from "react-icons/fa";
+import {MdFavoriteBorder} from "react-icons/md"
 
 
 export default function App() {
@@ -28,14 +30,14 @@ export default function App() {
             </HiHome>
           </NavLink>
           <NavLink to="/favorite" className="iconWrapper">
-            <HiHome className="icon">
+            <MdFavoriteBorder className="icon">
               Favorite
-            </HiHome>
+            </MdFavoriteBorder>
           </NavLink>
           <NavLink to="/about" className="iconWrapper">
-            <HiHome className="icon">
+            <FaQuestionCircle className="icon">
               About
-            </HiHome>
+            </FaQuestionCircle>
           </NavLink>
           <NavLink to="/profile" className="iconWrapper">
             <MdGroup className="icon">
