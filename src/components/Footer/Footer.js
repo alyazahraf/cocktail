@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="footer">
             <div className="top">
                 <div>
-                    <h1>Cocktime!</h1>
+                    <h1>Cocktail!</h1>
                     <p>Choose your favorite cocktail.</p>
                 </div>
             </div>
